@@ -76,7 +76,31 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\CSGD_Direct3D.cpp" />
+    <ClCompile Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\CSGD_DirectInput.cpp" />
+    <ClCompile Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\CSGD_EventSystem.cpp" />
+    <ClCompile Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\CSGD_MessageSystem.cpp" />
+    <ClCompile Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\CSGD_TextureManager.cpp" />
+    <ClCompile Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\CSGD_XAudio2.cpp" />
+    <ClCompile Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\SGD_Math.cpp" />
+    <ClCompile Include="..\..\You%27re a hero\You%27re a hero\source\Game.cpp" />
     <ClCompile Include="..\..\You%27re a hero\You%27re a hero\source\WinMain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\CEvent.h" />
+    <ClInclude Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\CSGD_Direct3D.h" />
+    <ClInclude Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\CSGD_DirectInput.h" />
+    <ClInclude Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\CSGD_EventSystem.h" />
+    <ClInclude Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\CSGD_MessageSystem.h" />
+    <ClInclude Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\CSGD_ObjectFactory.h" />
+    <ClInclude Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\CSGD_TextureManager.h" />
+    <ClInclude Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\CSGD_XAudio2.h" />
+    <ClInclude Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\IListener.h" />
+    <ClInclude Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\IMessage.h" />
+    <ClInclude Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\SGD_Math.h" />
+    <ClInclude Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\SGD_String.h" />
+    <ClInclude Include="..\..\You%27re a hero\You%27re a hero\source\Game.h" />
+    <ClInclude Include="..\..\You%27re a hero\You%27re a hero\source\IGameState.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

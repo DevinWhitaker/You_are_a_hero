@@ -13,10 +13,90 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\GameStates">
+      <UniqueIdentifier>{21a630ce-eea7-49df-9ef3-f074a5f74b60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameStates">
+      <UniqueIdentifier>{abfa98d7-2b51-4d6a-a5e7-95415715b2ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wrappers">
+      <UniqueIdentifier>{2f362655-52a7-4dac-a3b2-4bf653e6083d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wrappers">
+      <UniqueIdentifier>{2ef31b18-e568-4073-a0f9-ca112444541c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\You%27re a hero\You%27re a hero\source\WinMain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\You%27re a hero\You%27re a hero\source\Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\CSGD_Direct3D.cpp">
+      <Filter>Source Files\Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\CSGD_DirectInput.cpp">
+      <Filter>Source Files\Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\CSGD_EventSystem.cpp">
+      <Filter>Source Files\Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\CSGD_MessageSystem.cpp">
+      <Filter>Source Files\Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\CSGD_TextureManager.cpp">
+      <Filter>Source Files\Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\CSGD_XAudio2.cpp">
+      <Filter>Source Files\Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\SGD_Math.cpp">
+      <Filter>Source Files\Wrappers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\You%27re a hero\You%27re a hero\source\IGameState.h">
+      <Filter>Header Files\GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\You%27re a hero\You%27re a hero\source\Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\CEvent.h">
+      <Filter>Header Files\Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\CSGD_Direct3D.h">
+      <Filter>Header Files\Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\CSGD_DirectInput.h">
+      <Filter>Header Files\Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\CSGD_EventSystem.h">
+      <Filter>Header Files\Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\CSGD_MessageSystem.h">
+      <Filter>Header Files\Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\CSGD_ObjectFactory.h">
+      <Filter>Header Files\Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\CSGD_TextureManager.h">
+      <Filter>Header Files\Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\CSGD_XAudio2.h">
+      <Filter>Header Files\Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\IListener.h">
+      <Filter>Header Files\Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\IMessage.h">
+      <Filter>Header Files\Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\SGD_Math.h">
+      <Filter>Header Files\Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\SGD_String.h">
+      <Filter>Header Files\Wrappers</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,6 +1,6 @@
 #include <windows.h>	//	Needed for Windows Applications.
 #include <tchar.h>
-
+#include "Game.h"
 
 #if _DEBUG
 #include <stdio.h>
@@ -60,6 +60,8 @@ const int	g_nWINDOW_HEIGHT		= 600;							//	Window Height.
 	const BOOL	g_bIS_WINDOWED			= FALSE;
 #endif
 
+	static Game* pGamePtr(nullptr);
+
 LRESULT CALLBACK WindowProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 {
 	//	This is the main message handler of the system.
@@ -86,10 +88,15 @@ LRESULT CALLBACK WindowProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 			if (LOWORD(wParam) != WA_INACTIVE)
 			{
 				// unpause game code here
+				if(pGamePtr)
+				{
+					pGamePtr->Pause(false);
+				}
 			}
 			else // losing focus
 			{
 				// pause game code here
+				pGamePtr->Pause(true);
 			}
 		}
 		break;
@@ -276,7 +283,9 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	//////////////////////////////////////////
 	//	Initialize Game here
 	//////////////////////////////////////////
-		
+	Game cGameInstance;
+	cGameInstance.Initialize();
+	pGamePtr = &cGameInstance;
 	//////////////////////////////////////////
 
 	//	Enter main event loop
@@ -298,14 +307,14 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		//////////////////////////////////
 		//	Put Game Logic Here
 		//////////////////////////////////
-
+		cGameInstance.Run();
 		//////////////////////////////////
 	}
 
 	/////////////////////////////////////////
 	//	Shutdown Game Here
 	/////////////////////////////////////////
-	
+	cGameInstance.Shutdown();
 	/////////////////////////////////////////
 	
 	
