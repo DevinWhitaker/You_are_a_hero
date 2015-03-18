@@ -18,10 +18,10 @@ CSGD_MessageSystem* CSGD_MessageSystem::GetInstance( void )
 }
 
 //	Initialize
-void CSGD_MessageSystem::Initialize( void (*pfnMsgProc)( IMessage* ) )
+void CSGD_MessageSystem::Initialize( IMessageReceiver* pReceiver )
 {
-	//	Store the message callback function.
-	m_pfnMsgProc = pfnMsgProc;
+	//	Store the message receiver.
+	m_pReceiver = pReceiver;
 }
 
 //	QueueMessage
@@ -38,14 +38,14 @@ void CSGD_MessageSystem::QueueMessage( IMessage* pMsg )
 //	Process Messages
 void CSGD_MessageSystem::ProcessMessages( void )
 {
-	//	Error check that there is a callback function.
-	if( m_pfnMsgProc == nullptr )	
+	//	Error check that there is a receiver.
+	if( m_pReceiver == nullptr )	
 		return;
 
 	//	Go through the entire queue and process the messsages that are waiting.
 	while( m_MsgQueue.empty() == false )
 	{
-		m_pfnMsgProc( m_MsgQueue.front() );		//	Process the first message.
+		m_pReceiver->MessageProc( m_MsgQueue.front() );		//	Process the first message.
 		delete m_MsgQueue.front();				//	Delete the message.
 		m_MsgQueue.pop();						//	Go to the next message.
 	}
@@ -68,6 +68,6 @@ void CSGD_MessageSystem::Terminate( void )
 	//	Clear out any messages waiting.
 	ClearMessages();
 
-	//	Clear the function pointer
-	m_pfnMsgProc = NULL;
+	//	Clear the pointer
+	m_pReceiver = NULL;
 }

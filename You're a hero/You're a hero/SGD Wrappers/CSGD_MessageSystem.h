@@ -10,14 +10,15 @@
 #include <queue>
 
 #include "IMessage.h"
+#include "IMessageReceiver.h"
 
 class CSGD_MessageSystem
 {
 private:
 	std::queue< IMessage* >		m_MsgQueue;						//	Stores messages.
-	void						(*m_pfnMsgProc)( IMessage* );	//	Points to user defined function.
+	IMessageReceiver*			m_pReceiver;					//	Points to the class receiving the messages.
 
-	CSGD_MessageSystem() { m_pfnMsgProc = NULL;	}
+	CSGD_MessageSystem() { m_pReceiver = NULL;	}
 	~CSGD_MessageSystem() {}
 
 	CSGD_MessageSystem( const CSGD_MessageSystem& );
@@ -32,7 +33,7 @@ public:
 	inline int GetNumMessages( void ) { return (int)m_MsgQueue.size(); }
 
 	//	Setup the function pointer for our messages.
-	void Initialize( void (*pfnMsgProc)( IMessage* ) );
+	void Initialize( IMessageReceiver* pReceiver );
 
 	//	Sends the message into the queue and awaits processing later on through
 	//	The ProcessMessages() function.
