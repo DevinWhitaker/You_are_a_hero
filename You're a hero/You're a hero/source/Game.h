@@ -17,4 +17,6 @@ public:
 private:
 	IGameState*	m_pCurrentState;
 	CSGD_MessageSystem* m_pMessageManager;
+
+	void ChangeState(IGameState* newState);
 };

@@ -204,6 +204,9 @@
     <ClCompile Include="..\..\Box2D\Dynamics\b2WorldCallbacks.cpp">
       <Filter>Box2D Engine\Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\You%27re a hero\You%27re a hero\source\GameplayState.cpp">
+      <Filter>Source Files\GameStates</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\You%27re a hero\You%27re a hero\source\IGameState.h">
@@ -394,6 +397,9 @@
     </ClInclude>
     <ClInclude Include="..\..\Box2D\Box2D.h">
       <Filter>Box2D Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\You%27re a hero\You%27re a hero\source\GameplayState.h">
+      <Filter>Header Files\GameStates</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

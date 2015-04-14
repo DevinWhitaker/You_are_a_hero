@@ -1,13 +1,16 @@
 #pragma once
+#include <Box2D/Box2D.h>
+#include <string>
+using namespace std;
 
 class IGameState
 {
 public:
-	IGameState();
-	virtual ~IGameState() = 0;
+	IGameState(){};
+	virtual ~IGameState(){};
 	virtual void Enter(){};
-	virtual void Leave(){};
-	virtual void Update(float fDelta){};
+	virtual void Exit(){};
+	virtual void Update(float fDelta) = 0;
 	virtual void Render(){};
 	virtual void Pause(){};
 	virtual void Unpause(){};
