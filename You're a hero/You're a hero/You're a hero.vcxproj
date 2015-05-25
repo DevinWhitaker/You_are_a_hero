@@ -134,6 +134,8 @@
     <ClCompile Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\SGD_Math.cpp" />
     <ClCompile Include="..\..\You%27re a hero\You%27re a hero\source\Game.cpp" />
     <ClCompile Include="..\..\You%27re a hero\You%27re a hero\source\GameplayState.cpp" />
+    <ClCompile Include="..\..\You%27re a hero\You%27re a hero\source\PhsyObjExport.cpp" />
+    <ClCompile Include="..\..\You%27re a hero\You%27re a hero\source\PlayerEntity.cpp" />
     <ClCompile Include="..\..\You%27re a hero\You%27re a hero\source\WinMain.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -199,8 +201,11 @@
     <ClInclude Include="..\..\You%27re a hero\You%27re a hero\SGD Wrappers\SGD_String.h" />
     <ClInclude Include="..\..\You%27re a hero\You%27re a hero\source\Game.h" />
     <ClInclude Include="..\..\You%27re a hero\You%27re a hero\source\GameplayState.h" />
+    <ClInclude Include="..\..\You%27re a hero\You%27re a hero\source\IEntity.h" />
     <ClInclude Include="..\..\You%27re a hero\You%27re a hero\source\IGameState.h" />
     <ClInclude Include="..\..\You%27re a hero\You%27re a hero\source\MSG_GoToState.h" />
+    <ClInclude Include="..\..\You%27re a hero\You%27re a hero\source\PhsyObjExport.h" />
+    <ClInclude Include="..\..\You%27re a hero\You%27re a hero\source\PlayerEntity.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

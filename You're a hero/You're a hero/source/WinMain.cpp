@@ -1,6 +1,9 @@
 #include <windows.h>	//	Needed for Windows Applications.
 #include <tchar.h>
 #include "Game.h"
+#include "../SGD Wrappers/CSGD_TextureManager.h"
+#include "../SGD Wrappers/CSGD_Direct3D.h"
+#include "../SGD Wrappers/CSGD_DirectInput.h"
 
 #if _DEBUG
 #include <stdio.h>
@@ -283,6 +286,14 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	//////////////////////////////////////////
 	//	Initialize Game here
 	//////////////////////////////////////////
+
+	//TODO: delete all of...
+	CSGD_Direct3D* pD3D = CSGD_Direct3D::GetInstance();
+	pD3D->Initialize( hWnd, g_nWINDOW_WIDTH, g_nWINDOW_HEIGHT, g_bIS_WINDOWED, false );
+	CSGD_TextureManager::GetInstance()->Initialize( pD3D->GetDirect3DDevice(), pD3D->GetSprite() );
+	CSGD_DirectInput::GetInstance()->Initialize( hWnd, hInstance, DI_KEYBOARD | DI_MOUSE );
+	//...this 
+
 	Game cGameInstance;
 	cGameInstance.Initialize();
 	pGamePtr = &cGameInstance;

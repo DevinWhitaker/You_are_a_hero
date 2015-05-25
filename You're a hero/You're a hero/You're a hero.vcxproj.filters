@@ -37,6 +37,18 @@
     <Filter Include="Box2D Engine\Source Files">
       <UniqueIdentifier>{e7f45392-b04c-4293-b756-59233e79c71a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Entities">
+      <UniqueIdentifier>{cb92223d-deba-44dc-b55c-26eedddf5b84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entities">
+      <UniqueIdentifier>{8f33ad47-3c9d-4d1e-a842-b6c62e51765e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Animation">
+      <UniqueIdentifier>{f3416756-1726-4136-9ae4-6e35d901374f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Animation">
+      <UniqueIdentifier>{82f5abb1-c518-427d-aef6-632af0400437}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\You%27re a hero\You%27re a hero\source\WinMain.cpp">
@@ -206,6 +218,12 @@
     </ClCompile>
     <ClCompile Include="..\..\You%27re a hero\You%27re a hero\source\GameplayState.cpp">
       <Filter>Source Files\GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\You%27re a hero\You%27re a hero\source\PhsyObjExport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\You%27re a hero\You%27re a hero\source\PlayerEntity.cpp">
+      <Filter>Source Files\Entities</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -400,6 +418,15 @@
     </ClInclude>
     <ClInclude Include="..\..\You%27re a hero\You%27re a hero\source\GameplayState.h">
       <Filter>Header Files\GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\You%27re a hero\You%27re a hero\source\PhsyObjExport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\You%27re a hero\You%27re a hero\source\PlayerEntity.h">
+      <Filter>Header Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\You%27re a hero\You%27re a hero\source\IEntity.h">
+      <Filter>Header Files\Entities</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
